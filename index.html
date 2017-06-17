@@ -24,9 +24,9 @@
   <body>
     <header>
       <div class="inner">
-        <h1>Azuracast</h1>
+        <h1>AzuraCast</h1>
         <h2>A Self-Hosted Web Radio Manager</h2>
-        <a href="https://github.com/SlvrEagle23/AzuraCast" class="button"><small>View project on</small> GitHub</a>
+        <a href="https://github.com/AzuraCast/AzuraCast" class="button"><small>View project on</small> GitHub</a>
       </div>
     </header>
 
@@ -35,147 +35,77 @@
         <section id="main-content">
           <p><strong>AzuraCast</strong> is a standalone, turnkey web radio management kit. Using its easy installer, you can go from a fresh Linux installation to a fully working web radio station in about 5 minutes. </p>
 
-<p><strong>AzuraCast is currently in alpha.</strong> The web application is stable and includes a number of powerful features, but if you want to keep up to date with the latest version of the software, keep in mind that updates may cause unexpected issues or data loss. Always make sure to keep your files backed up, especially the files contained in <code>/var/azuracast/stations</code>.</p>
+          <p><strong>AzuraCast is currently in alpha.</strong> The web application is stable and includes a number of powerful features, but if you want to keep up to date with the latest version of the software, keep in mind that updates may cause unexpected issues or data loss. Always make sure to keep your files backed up, especially your station media.</p>
 
-<p>To use AzuraCast, you should have a basic understanding of the Linux shell terminal. Once installed, every aspect of your radio station can be managed via AzuraCast's web interface with no advanced Linux knowledge required.</p>
+          <p>To use AzuraCast, you should have a basic understanding of the Linux shell terminal. Once installed, every aspect of your radio station can be managed via AzuraCast's web interface with no advanced Linux knowledge required.</p>
 
-<h2>
-<a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features</h2>
+          <h2><a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features</h2>
 
-<p>With AzuraCast, you can:</p>
+          <p>With AzuraCast, you can:</p>
 
-<ul>
-<li>
-<strong>Manage your Media:</strong> Upload songs from the web, organize music into folders, and preview songs in your browser.</li>
-<li>
-<strong>Create Playlists:</strong> Set up standard playlists that play all the time, scheduled playlists for time periods, or special playlists that play once per x songs, or once per x minutes.</li>
-<li>
-<strong>Set Up Live DJs:</strong> Enable or disable live broadcasting from streamers/DJs, and create individual accounts for each streamer to use.</li>
-<li>
-<strong>Take Listener Requests:</strong> Let your listeners request specific songs from your playlists, both via an API and a simple public-facing listener page.</li>
-<li>
-<strong>Analytics and Reports:</strong> Keep track of every aspect of your station's listeners over time. View reports of each song's performance and</li>
-<li>
-<strong>Station Autopilot:</strong> AzuraCast can automatically assign songs to a playlist based on the song's impact on listener numbers. </li>
-<li>
-<strong>Delegate Management:</strong> Create and remove separate administrator accounts for each station manager.</li>
-<li>...and more.</li>
-</ul>
+          <ul>
+            <li><strong>Manage your Media:</strong> Upload songs from the web, organize music into folders, and preview songs in your browser.</li>
+            <li><strong>Create Playlists:</strong> Set up standard playlists that play all the time, scheduled playlists for time periods, or special playlists that play once per x songs, or once per x minutes.</li>
+            <li><strong>Set Up Live DJs:</strong> Enable or disable live broadcasting from streamers/DJs, and create individual accounts for each streamer to use.</li>
+            <li><strong>Take Listener Requests:</strong> Let your listeners request specific songs from your playlists, both via an API and a simple public-facing listener page.</li>
+            <li><strong>Analytics and Reports:</strong> Keep track of every aspect of your station's listeners over time. View reports of each song's performance and</li>
+            <li><strong>Station Autopilot:</strong> AzuraCast can automatically assign songs to a playlist based on the song's impact on listener numbers. </li>
+            <li><strong>Delegate Management:</strong> Create and remove separate administrator accounts for each station manager.</li>
+            <li>...and more.</li>
+          </ul>
 
-<h3>
-<a id="supported-autodj-software" class="anchor" href="#supported-autodj-software" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Supported AutoDJ Software</h3>
+          <h3><a id="supported-autodj-software" class="anchor" href="#supported-autodj-software" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Supported AutoDJ Software</h3>
 
-<p>AzuraCast uses <a href="http://liquidsoap.fm/">LiquidSoap</a> as an "AutoDJ" to shuffle songs and playlists and provide an always-online radio stream.</p>
+          <p>AzuraCast uses the best tools of the trade to manage your radio station's music playback and broadcasting: <a href="http://liquidsoap.fm/">LiquidSoap</a> as an "AutoDJ" to shuffle songs and playlists, and your choice of <a href="http://icecast.org/">IceCast 2</a> or <a href="http://wiki.shoutcast.com/wiki/SHOUTcast_Broadcaster">ShoutCast 2</a> to broadcast to your listeners.</p>
 
-<h3>
-<a id="supported-radio-frontends" class="anchor" href="#supported-radio-frontends" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Supported Radio Frontends</h3>
+          <p>You can also use AzuraCast as a tool for syndicating remote stations. This allows you to take advantage of the powerful analytics and reporting tools in AzuraCast for any radio station that uses IceCast or ShoutCast 1 or 2.</p>
 
-<p>AzuraCast currently has modules to support these radio broadcasting services:</p>
+          <h3><a id="supported-operating-systems" class="anchor" href="#supported-operating-systems" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Supported Operating Systems</h3>
 
-<ul>
-<li>
-<a href="http://icecast.org/">IceCast</a> v2.4</li>
-<li>
-<a href="http://wiki.shoutcast.com/wiki/SHOUTcast_Broadcaster">ShoutCast</a> v2.x</li>
-</ul>
+          <p>AzuraCast supports these operating systems and architectures out of the box:</p>
 
-<p>You can also use AzuraCast as a tool for syndicating remote stations. This allows you to take advantage of the powerful analytics and reporting tools in AzuraCast for any radio station that uses IceCast or ShoutCast 1 or 2.</p>
+          <ul>
+            <li>Ubuntu 14.04 LTS (Trusty) x64</li>
+            <li>Ubuntu 16.04 LTS (Xenial) x64</li>
+            <li>Ubuntu 16.04 LTS (Xenial) ARM</li>
+          </ul>
 
-<h3>
-<a id="supported-operating-systems" class="anchor" href="#supported-operating-systems" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Supported Operating Systems</h3>
+          <h2><a id="installing-azuracast" class="anchor" href="#installing-azuracast" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installing AzuraCast</h2>
 
-<p>AzuraCast supports these operating systems and architectures out of the box:</p>
+          <p>Want to get started using AzuraCast on your own server? Visit the <a href="https://github.com/AzuraCast/AzuraCast#installing-azuracast">AzuraCast Main Readme</a> for detailed instructions.</p>
 
-<ul>
-<li>Ubuntu 14.04 LTS (Trusty) x64</li>
-<li>Ubuntu 16.04 LTS (Xenial) x64</li>
-<li>Ubuntu 16.04 LTS (Xenial) ARM</li>
-</ul>
+          <h2><a id="azuracast-api" class="anchor" href="#azuracast-api" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>AzuraCast API</h2>
 
-<h2>
-<a id="installing-azuracast" class="anchor" href="#installing-azuracast" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installing AzuraCast</h2>
+          <p>Once installed and running, AzuraCast exposes an API that allows you to monitor and interact with your stations.</p>
 
-<h3>
-<a id="installing-on-a-production-server" class="anchor" href="#installing-on-a-production-server" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installing on a Production Server</h3>
+          <p>You can view API documentation for your version of AzuraCast by visiting `your.azuracast.site/api`. Documentation for the latest version of AzuraCast is <a href="http://azuracast.com/api/">available on this web site</a>.</p>
 
-<p>AzuraCast is highly optimized for speed and performance, and can run on very inexpensive hardware, from the Raspberry Pi 3 to the lowest-level VPSes offered by most providers.</p>
+          <h2><a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
 
-<p>Since AzuraCast installs its own radio tools, databases and web servers, you should always install AzuraCast on a "clean" server instance with no other web or radio software installed previously.</p>
+          <p>AzuraCast is licensed under the <a href="https://github.com/AzuraCast/AzuraCast/blob/master/License.txt">Apache license, version 2.0</a>.</p>
 
-<p>As the <code>root</code> user, execute these commands to set up your AzuraCast server:</p>
+          <h2><a id="questions-comments-feedback" class="anchor" href="#questions-comments-feedback" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Questions? Comments? Feedback?</h2>
 
-<div class="highlight highlight-source-shell"><pre>apt-get update
-apt-get install -q -y git
+          <p>AzuraCast is a volunteer project, and we depend on your support and feedback to keep growing.</p>
 
-mkdir -p /var/azuracast/www
-<span class="pl-c1">cd</span> /var/azuracast/www
-git clone https://github.com/SlvrEagle23/AzuraCast.git <span class="pl-c1">.</span>
+          <p>Issues for this codebase are tracked in this repository's Issues section on GitHub. Anyone can create a new issue for the project, and you are encouraged to do so.</p>
 
-chmod a+x install.sh
-./install.sh</pre></div>
+          <h2><a id="contribute-to-azuracast" class="anchor" href="#contribute-to-azuracast" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contribute to AzuraCast</h2>
 
-<p>The installation process will take between 5 and 15 minutes, depending on your Internet connection. If you encounter an error, let us know in the <a href="https://github.com/SlvrEagle23/AzuraCast/issues">Issues section</a>.</p>
-
-<p>Once the terminal-based installation is complete, you can visit your server's public IP address (<code>http://ip.of.your.server/</code>) to finish the web-based setup.</p>
-
-<h4>
-<a id="updating" class="anchor" href="#updating" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Updating</h4>
-
-<p>AzuraCast also includes a handy updater script that pulls down the latest copy of the codebase from Git, flushes the site caches and makes any necessary database updates. Run these commands as any user with <code>sudo</code> permissions:</p>
-
-<div class="highlight highlight-source-shell"><pre><span class="pl-c1">cd</span> /var/azuracast/www
-
-chmod a+x update.sh
-./update.sh</pre></div>
-
-<h3>
-<a id="local-development-with-vagrant" class="anchor" href="#local-development-with-vagrant" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Local Development with Vagrant</h3>
-
-<p>To make local development and testing easier, AzuraCast also includes the necessary configuration to set up a Vagrant box on your computer.</p>
-
-<p>See <a href="https://github.com/SlvrEagle23/AzuraCast/wiki/Developing-Locally">the AzuraCast Wiki</a> for detailed instructions on the installation process.</p>
-
-<h2>
-<a id="screenshots" class="anchor" href="#screenshots" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Screenshots</h2>
-
-<p>Take a look at samples of the AzuraCast interface on the <a href="https://github.com/SlvrEagle23/AzuraCast/wiki/Screenshots">Screenshots</a> page on the Wiki.</p>
-
-<h2>
-<a id="azuracast-api" class="anchor" href="#azuracast-api" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>AzuraCast API</h2>
-
-<p>Once installed and running, AzuraCast exposes an API that allows you to monitor and interact with your stations.</p>
-
-<p>Documentation about this API and its endpoints are available on the <a href="http://docs.azuracast.apiary.io/">AzuraCast APIary Documentation</a>.</p>
-
-<h2>
-<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
-
-<p>AzuraCast is licensed under the <a href="https://github.com/SlvrEagle23/AzuraCast/blob/master/License.txt">Apache license, version 2.0</a>.</p>
-
-<h2>
-<a id="questions-comments-feedback" class="anchor" href="#questions-comments-feedback" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Questions? Comments? Feedback?</h2>
-
-<p>AzuraCast is a volunteer project, and we depend on your support and feedback to keep growing.</p>
-
-<p>Issues for this codebase are tracked in this repository's Issues section on GitHub. Anyone can create a new issue for the project, and you are encouraged to do so.</p>
-
-<h2>
-<a id="contribute-to-azuracast" class="anchor" href="#contribute-to-azuracast" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contribute to AzuraCast</h2>
-
-<p>This codebase is Free and Open Source Software, both to help our team maintain transparency and to encourage contributions from the developer community. If you see a bug or other issue with the codebase, please report an issue or submit a pull request!</p>
+          <p>This codebase is Free and Open Source Software, both to help our team maintain transparency and to encourage contributions from the developer community. If you see a bug or other issue with the codebase, please report an issue or submit a pull request!</p>
         </section>
 
         <aside id="sidebar">
-          <a href="https://github.com/SlvrEagle23/AzuraCast/zipball/master" class="button">
+          <a href="https://github.com/AzuraCast/AzuraCast/zipball/master" class="button">
             <small>Download</small>
             .zip file
           </a>
-          <a href="https://github.com/SlvrEagle23/AzuraCast/tarball/master" class="button">
+          <a href="https://github.com/AzuraCast/AzuraCast/tarball/master" class="button">
             <small>Download</small>
             .tar.gz file
           </a>
 
-          <p class="repo-owner"><a href="https://github.com/SlvrEagle23/AzuraCast"></a> is maintained by <a href="https://github.com/SlvrEagle23">SlvrEagle23</a>.</p>
+          <p class="repo-owner"><a href="https://github.com/AzuraCast/AzuraCast"></a> is maintained by <a href="https://github.com/SlvrEagle23">SlvrEagle23</a>.</p>
 
           <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
         </aside>
