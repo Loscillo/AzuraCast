@@ -44,7 +44,7 @@ services:
     volumes:
       - .:/var/azuracast/www
       - tmp_data:/var/azuracast/www_tmp
-      - /home/stations:/var/azuracast/stations
+      - station_data:/var/azuracast/stations
     restart: always
 
   cron:
@@ -105,7 +105,7 @@ services:
      - '8095:8095'
      - '8096:8096'
     volumes:
-     - /home/stations:/var/azuracast/stations
+     - station_data:/var/azuracast/stations
     restart: always
 
 volumes:
