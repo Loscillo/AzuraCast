@@ -102,6 +102,9 @@ abstract class FrontendAbstract extends \AzuraCast\Radio\AdapterAbstract
         $settings_repo = $this->di['em']->getRepository('Entity\Settings');
 
         $base_url = $settings_repo->getSetting('base_url', 'localhost');
+
+        echo $base_url;
+
         $use_radio_proxy = $settings_repo->getSetting('use_radio_proxy', 0);
 
         // Web proxy support.
