@@ -103,7 +103,11 @@ abstract class FrontendAbstract extends \AzuraCast\Radio\AdapterAbstract
 
         $base_url = $settings_repo->getSetting('base_url', 'localhost');
 
-        echo $base_url;
+        // TODO : IPV6
+        // We don't want the port of the web application here
+        if(strpos($base_url, ":") !== false) {
+            $base_url = substr($base_url, 0, strpos($base_url, ":"));
+        }
 
         $use_radio_proxy = $settings_repo->getSetting('use_radio_proxy', 0);
 
